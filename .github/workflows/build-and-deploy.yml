@@ -21,8 +21,6 @@ jobs:
       - name: Deploy site
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          provider: github
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          target: main
-          ref: main
-          path: dist
+          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: main 
+          FOLDER: dist
