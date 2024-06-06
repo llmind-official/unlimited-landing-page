@@ -19,7 +19,7 @@ jobs:
         run: npm run build
 
       - name: Deploy site
-        uses: actions/deploy@v1
+        uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           provider: github
           github-token: ${{ secrets.DEPLOY_TOKEN }}
