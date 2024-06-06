@@ -1,0 +1,28 @@
+name: Build and Deploy Unlimited Analytics Landing Page
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build site
+        run: npm run build
+
+      - name: Deploy site
+        uses: actions/deploy@v1
+        with:
+          provider: github
+          github-token: ${{ secrets.DEPLOY_TOKEN }}
+          target: main
+          ref: main
+          path: dist
