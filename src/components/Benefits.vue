@@ -19,25 +19,25 @@ interface BenefitsProps {
 const benefitList: BenefitsProps[] = [
   {
     icon: "blocks",
-    title: "Build Brand Trust",
+    title: "Insights in Seconds",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
   },
   {
     icon: "lineChart",
-    title: "More Leads",
+    title: "Higher Actionable Throughput",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, natus consectetur.",
   },
   {
     icon: "wallet",
-    title: "Higher Conversions",
+    title: "Better KPI performance",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur. A odio velit cum aliquam",
   },
   {
     icon: "sparkle",
-    title: "Test Marketing Ideas",
+    title: "Better Competitiveness",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
   },
@@ -71,12 +71,12 @@ const iconMap: Record<
         <h2 class="text-lg text-primary mb-2 tracking-wider">Benefits</h2>
 
         <h2 class="text-3xl md:text-4xl font-bold mb-4">
-          Your Shortcut to Success
+          Understand Your Business Better
         </h2>
         <p class="text-xl text-muted-foreground mb-8">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non ducimus
-          reprehenderit architecto rerum similique facere odit deleniti
-          necessitatibus quo quae.
+          Businesses today are knowledge engines. A good business must
+          efficiently extract actionable value to be competitive. Unlimited Analytics make 
+          the journey from data to insights a cakewalk so teams can focus on execution.
         </p>
       </div>
 

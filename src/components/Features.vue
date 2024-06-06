@@ -20,40 +20,34 @@ interface FeaturesProps {
 
 const featureList: FeaturesProps[] = [
   {
-    icon: "tabletSmartphone",
-    title: "Mobile Friendly",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.",
-  },
-  {
     icon: "badgeCheck",
-    title: "Social Proof",
+    title: "Complex Queries",
     description:
       "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
   },
   {
     icon: "goal",
-    title: "Targeted Content",
+    title: "Proactive Insights",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
   },
   {
     icon: "pictureInPicture",
-    title: "Strong Visuals",
+    title: "Continuous Mining of Data",
     description:
       "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.",
   },
   {
     icon: "mousePointerClick",
-    title: "Clear CTA",
+    title: "Insight Recommendation",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
   },
   {
-    icon: "newspaper",
-    title: "Clear Headline",
+    icon: "mousePointerClick",
+    title: "Supported Models",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
   },
 ];
 
@@ -93,9 +87,12 @@ const iconMap: Record<
     </h2>
 
     <h3 class="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-      fugiat, odit similique quasi sint reiciendis quidem iure veritatis optio
-      facere tenetur.
+      Unlike other Analytics Platforms, 
+      <span
+        class="text-transparent bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text"
+      >Unlimited Analytics
+      </span>
+      attempts to continuously build a holistic picture of business dynamics of your company
     </h3>
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

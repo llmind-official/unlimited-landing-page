@@ -14,33 +14,27 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: "Is this template free?",
+    question: "How does Unlimited Analytics handle my data?",
     answer: "Yes. It is a free Shadcn/Vue template.",
     value: "item-1",
   },
   {
-    question: "Duis aute irure dolor in reprehenderit in voluptate velit?",
+    question: "What is the pricing model?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam consectetur sapiente, iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
     value: "item-2",
   },
   {
     question:
-      "Lorem ipsum dolor sit amet Consectetur natus dolor minus quibusdam?",
+      "Can I integrate Unlimited Analytics with other tools and platforms we use?",
     answer:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore qui nostrum reiciendis veritatis.",
     value: "item-3",
   },
   {
-    question: "Excepteur sint occaecat cupidata non proident sunt?",
+    question: "What kind of customer support do you offer?",
     answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     value: "item-4",
-  },
-  {
-    question:
-      "Enim ad minim veniam, quis nostrud exercitation ullamco laboris?",
-    answer: "consectetur adipisicing elit. Sint labore.",
-    value: "item-5",
   },
 ];
 </script>
@@ -54,7 +48,7 @@ const FAQList: FAQProps[] = [
       <h2 class="text-lg text-primary text-center mb-2 tracking-wider">FAQS</h2>
 
       <h2 class="text-3xl md:text-4xl text-center font-bold">
-        Common Questions
+        Frequently Asked Questions
       </h2>
     </div>
 
@@ -73,19 +67,5 @@ const FAQList: FAQProps[] = [
         <AccordionContent>{{ answer }}</AccordionContent>
       </AccordionItem>
     </Accordion>
-
-    <h3 class="font-medium mt-4">
-      Still have questions?
-      <a
-        href="#"
-        class="text-muted-foreground"
-      >
-        <a
-          href="#"
-          class="underline"
-          >Contact us</a
-        >
-      </a>
-    </h3>
   </section>
 </template>
