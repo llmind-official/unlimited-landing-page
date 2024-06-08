@@ -6,7 +6,7 @@ import tailwind from "tailwindcss";
 import autoprefixer from "autoprefixer";
 
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/unlimited-landing-page/' : '/',
+  //base: process.env.NODE_ENV === 'production' ? '/unlimited-landing-page/' : '/',
   css: {
     postcss: {
       plugins: [tailwind(), autoprefixer()],
