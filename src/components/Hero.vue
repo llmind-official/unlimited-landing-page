@@ -64,14 +64,14 @@ import { ArrowRight } from "lucide-vue-next";
       <div class="relative group mt-14">
         <!-- gradient shadow -->
         <div
-          class="absolute top-2 lg:-top-8 left-1/2 transform -translate-x-1/2 w-[90%] mx-auto h-24 lg:h-80 bg-primary/50 rounded-full blur-3xl"
+          class="absolute top-2 lg:-top-8 left-1/2 transform -translate-x-1/2 w-[90%] mx-auto h-24 lg:h-80 bg-primary/20 rounded-full blur-3xl"
         ></div>
         <img
           class="w-full md:w-[1200px] mx-auto rounded-lg relative rouded-lg leading-none flex items-center border border-t-2 border-t-primary/30"
           :src="
             mode == 'light' ? 'hero-image-light.jpeg' : 'hero-image-dark.jpeg'
           "
-          alt="dashboard using shadcn-vue"
+          alt="unlimited analytics ui"
         />
 
         <!-- gradient effect img -->
