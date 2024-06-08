@@ -20,7 +20,7 @@ const contactList: ContactProps[] = [
   {
     method: "LinkedIn",
     name: "Aditya",
-    link: "linkedin.com/in/aditya-prasad-a15637105/",
+    link: "https://www.linkedin.com/in/adypd/",
   },
 ];
 
