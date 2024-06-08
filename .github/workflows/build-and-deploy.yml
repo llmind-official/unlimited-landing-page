@@ -1,4 +1,4 @@
-name: Build and Deploy Unlimited Analytics Landing Page
+name: Build and Deploy
 
 on:
   push:
@@ -6,34 +6,27 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pages: write 
-      id-token: write
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '22'
+
       - name: Install dependencies
         run: npm install
 
-      - name: Build site
+      - name: Build project
         run: npm run build
-      
-      - name: Remove symlinks in dist
-        run: find dist -type l -exec rm -f {} \;
 
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v4
+      - name: Deploy to GitHub Pages
+        if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          name: github-pages
-          path: dist
-
-      - name: Deploy site
-        uses: actions/deploy-pages@v4
-        with:
-          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: landing-page
-          FOLDER: dist
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
